@@ -1,40 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astrology | Dr. Sujata Goswami</title>
-  <link rel="stylesheet" href="personal_site_styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology | Dr. Sujata Goswami</title>
+    <!-- Tailwind CSS CDN for modern styling and responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter for a clean and readable typeface -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to ensure Inter font is applied and provide a soft background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Consistent light gray background */
+            color: #333; /* Darker text for readability */
+        }
+        /* Style for the navigation links for better hover effects */
+        nav ul li a {
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            border-radius: 0.5rem; /* Rounded corners for links */
+            padding: 0.5rem 1rem; /* Padding for clickability */
+        }
+        nav ul li a:hover {
+            background-color: #e2e8f0; /* Lighter background on hover */
+            color: #2563eb; /* Blue text on hover */
+        }
+    </style>
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
+    <!-- Header section with navigation bar - Consistent with index.html -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg py-4 px-6 md:px-8">
+        <nav class="container mx-auto flex justify-center">
+            <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 md:space-x-8 text-lg font-medium">
+                <li><a href="home.html" data-section="home" class="hover:text-blue-200">Home</a></li>
+                <li><a href="background.html" data-section="background" class="hover:text-blue-200">Background</a></li>
+                <li><a href="expertise.html" data-section="expertise" class="hover:text-blue-200">Expertise</a></li>
+                <li><a href="astrologer.html" data-section="astrologer" class="hover:text-blue-200">Astrologer</a></li>
+                <li><a href="contact.html" data-section="contact" class="hover:text-blue-200">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Main content area for Astrology details -->
+    <main class="flex-grow container mx-auto p-4 sm:p-6 md:p-8">
+        <section class="container mx-auto max-w-4xl bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 pb-3 border-b-2 border-purple-600 text-center">
+                Vedic Astrology Insights
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+                Rooted in the ancient Indian tradition of Jyotish Shastra, my Vedic Astrology practice aims to help individuals find clarity, timing, and purpose in life. Whether you're at a crossroads or seeking to understand life’s patterns, I offer insights grounded in tradition and guided by compassion.
+            </p>
 
-  <main>
-    <section class="section">
-      <h2>Vedic Astrology</h2>
-      <p>
-        Rooted in the ancient Indian tradition of Jyotish Shastra, my Vedic Astrology practice aims to help individuals find clarity, timing, and purpose in life. Whether you're at a crossroads or seeking to understand life’s patterns, I offer insights grounded in tradition and guided by compassion.
-      </p>
-    </section>
+            <div class="space-y-8 mt-8">
+                <!-- Services Offered Section -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-purple-700 mb-4">Services Offered</h3>
+                    <ul class="list-none pl-0 space-y-3 text-lg text-gray-700">
+                        <li class="flex items-center">
+                            <span class="mr-3 text-2xl">🪐</span> Personalized birth chart (Kundli) analysis
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-2xl">🕰️</span> Dasha & transit (Gochar) interpretation
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-2xl">💍</span> Relationship & marriage compatibility readings
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-2xl">💼</span> Career & financial guidance
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-2xl">📅</span> Muhurta (Auspicious Timing for key life events)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-2xl">🔮</span> Remedies: Guidance on gemstones, mantras, colors, and rituals
+                        </li>
+                    </ul>
+                </div>
 
-    <section class="section">
-      <h2>Services Offered</h2>
-      <ul>
-        <li>🪐 Personalized birth chart (Kundli) analysis</li>
-        <li>🕰️ Dasha & transit (Gochar) interpretation</li>
-        <li>💍 Relationship & marriage compatibility</li>
-        <li>💼 Career & financial guidance</li>
-        <li>📅 Muhurta (Auspicious Timing)</li>
-        <li>🔮 Remedies: Gemstones, mantras, colors, and rituals</li>
-      </ul>
-    </section>
+                <!-- Why Choose Me? Section -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-purple-700 mb-4">Why Choose Me?</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        As a trained scientist and an astrologer, I offer a unique balance between **rational analysis** and **spiritual depth**. My approach is precise, ethical, and personalized—you'll receive thoughtful insights tailored specifically to your birth chart, not generic predictions.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section class="section">
-      <h2>Why Choose Me?</h2>
-      <p>
-        As a trained scientist and an astrologer, I offer a unique balance between rational analysis and spiritual depth. My approach is precise, ethical, and personalized—no generic predictions, only thoughtful insight tailored to your birth chart.
-      </p>
-    </section>
-  </main>
+    <!-- Footer section - Consistent with index.html -->
+    <footer class="bg-gray-800 text-white text-center py-4 px-6 md:px-8 mt-auto">
+        <p class="text-sm">&copy; 2023 Dr. Sujata Goswami. All rights reserved.</p>
+        <p class="text-xs mt-1">Bridging science and spirituality.</p>
+    </footer>
 </body>
 </html>
