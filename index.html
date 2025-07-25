@@ -1,34 +1,85 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sujata Goswami</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Dr. Sujata Goswami - Personal Website</title>
+    <!-- Tailwind CSS CDN for modern styling and responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter for a clean and readable typeface -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to ensure Inter font is applied and provide a soft background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light gray background for the entire page */
+            color: #333; /* Darker text for readability */
+        }
+        /* Style for the navigation links for better hover effects */
+        nav ul li a {
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            border-radius: 0.5rem; /* Rounded corners for links */
+            padding: 0.5rem 1rem; /* Padding for clickability */
+        }
+        nav ul li a:hover {
+            background-color: #e2e8f0; /* Lighter background on hover */
+            color: #2563eb; /* Blue text on hover */
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html" data-section="home">Home</a></li>
-                <li><a href="background.html" data-section="background">Background</a></li>
-                <li><a href="expertise.html" data-section="expertise">Expertise</a></li>
-                <li><a href="astrologer.html" data-section="astrologer">Astrologer</a></li>
-                <li><a href="contact.html" data-section="contact">Contact Me</a></li>
-
+<body class="flex flex-col min-h-screen">
+    <!-- Header section with navigation bar -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg py-4 px-6 md:px-8">
+        <nav class="container mx-auto flex justify-center">
+            <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 md:space-x-8 text-lg font-medium">
+                <li><a href="home.html" data-section="home" class="hover:text-blue-200">Home</a></li>
+                <li><a href="background.html" data-section="background" class="hover:text-blue-200">Background</a></li>
+                <li><a href="expertise.html" data-section="expertise" class="hover:text-blue-200">Expertise</a></li>
+                <li><a href="astrologer.html" data-section="astrologer" class="hover:text-blue-200">Astrologer</a></li>
+                <li><a href="contact.html" data-section="contact" class="hover:text-blue-200">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="content">
-        <!-- Dynamic content will be loaded here -->
+    <!-- Main content area -->
+    <main id="content" class="flex-grow container mx-auto p-4 sm:p-6 md:p-8">
+        <!-- Default content for the Home page, making the main page instantly reader-friendly -->
+        <section class="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 animate-fade-in-down">
+                Welcome to Dr. Sujata Goswami's Personal Website
+            </h1>
+            <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                Exploring the realms of both the scientific and the celestial.
+            </p>
+            <div class="space-y-4 text-left">
+                <p class="text-lg text-gray-800">
+                    As a dedicated **Earth and Space Science researcher** and **Software Engineer**, I leverage high-performance computing and data analysis to unravel complex natural phenomena. My passion lies in leading the development of robust scientific software and applying cutting-edge data science, machine learning, and recommender systems to diverse challenges.
+                </p>
+                <p class="text-lg text-gray-800">
+                    Beyond the technical, I am a **certified astrologer**, offering insights into personal growth and life navigation through the ancient wisdom of the stars. I believe in the profound connection between celestial alignments and individual destinies, guiding others through career, personal, and professional paths.
+                </p>
+            </div>
+            <p class="text-xl text-blue-700 font-semibold mt-8">
+                I invite you to explore my background, expertise, and unique perspective.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="background.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">
+                    Learn About My Journey
+                </a>
+                <a href="astrologer.html" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">
+                    Discover Astrology Insights
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 My Personal Profile</p>
+    <!-- Footer section -->
+    <footer class="bg-gray-800 text-white text-center py-4 px-6 md:px-8 mt-auto">
+        <p class="text-sm">&copy; 2023 Dr. Sujata Goswami. All rights reserved.</p>
+        <p class="text-xs mt-1">Built with passion and curiosity.</p>
     </footer>
 
+    <!-- Your existing scripts.js for dynamic content loading -->
     <script src="scripts.js"></script>
 </body>
 </html>
