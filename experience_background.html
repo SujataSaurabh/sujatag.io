@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sujata Goswami - Professional Profile</title>
+    <!-- Tailwind CSS CDN for modern styling and responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter for a clean and readable typeface -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to ensure Inter font is applied and provide a soft background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Consistent light gray background */
+            color: #333; /* Darker text for readability */
+        }
+        /* Style for the navigation links for better hover effects */
+        nav ul li a {
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            border-radius: 0.5rem; /* Rounded corners for links */
+            padding: 0.5rem 1rem; /* Padding for clickability */
+        }
+        nav ul li a:hover {
+            background-color: #e2e8f0; /* Lighter background on hover */
+            color: #2563eb; /* Blue text on hover */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header section with navigation bar - Consistent with index.html -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg py-4 px-6 md:px-8">
+        <nav class="container mx-auto flex justify-center">
+            <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 md:space-x-8 text-lg font-medium">
+                <li><a href="index.html" data-section="home" class="hover:text-blue-200">Home</a></li>
+                <!-- Update this link to point to this new combined page -->
+                <li><a href="profile.html" data-section="profile" class="hover:text-blue-200">Professional Profile</a></li>
+                <li><a href="astrologer.html" data-section="astrologer" class="hover:text-blue-200">Astrologer</a></li>
+                <li><a href="contact.html" data-section="contact" class="hover:text-blue-200">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area for Combined Professional Profile -->
+    <main class="flex-grow container mx-auto p-4 sm:p-6 md:p-8">
+        <section id="professional-profile" class="container mx-auto max-w-4xl bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 pb-3 border-b-2 border-blue-600 text-center">
+                My Professional Profile
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+                A comprehensive overview of my expertise and a timeline of my professional and academic journey.
+            </p>
+
+            <!-- Scientific and Engineering Expertise & Professional Background -->
+            <div class="mb-8 p-6 bg-gray-50 rounded-lg shadow-md">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-blue-500">Scientific and Engineering Expertise</h3>
+                <ul class="list-disc pl-5 space-y-3 text-lg text-gray-700 mb-6">
+                    <li>Trained as an <span class="font-bold">Earth and Space Science researcher</span>, I possess demonstrated expertise in <span class="font-bold">time-series data analysis, processing, and high-performance computing</span>.</li>
+                    <li>I have successfully led the <span class="font-bold">end-to-end delivery of both scientific and non-scientific software solutions</span>.</li>
+                    <li>My broad expertise spans <span class="font-bold">Software Engineering, Data Science, Machine Learning, Recommender Systems, Scientific Software Development, and Data Processing</span>.</li>
+                </ul>
+
+                <h4 class="text-2xl font-semibold text-blue-700 mt-8 mb-4">Key Professional & Academic Journey</h4>
+                <div class="space-y-6">
+                    <!-- Lawrence Berkeley National Lab -->
+                    <div class="bg-white p-5 rounded-md shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                        <h5 class="text-xl font-semibold text-gray-900 mb-1">Lawrence Berkeley National Lab</h5>
+                        <p class="text-md text-gray-700 mb-2"><span class="font-bold">Software Engineer- Lead</span> | Mid-2024 &ndash; Present</p>
+                        <ul class="list-disc pl-5 space-y-1 text-xs text-gray-600">
+                            <li>Currently managing the software development projects for the Advanced Light Source User Office, focusing on robust and efficient solutions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Oak Ridge National Lab -->
+                    <div class="bg-white p-5 rounded-md shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                        <h5 class="text-xl font-semibold text-gray-900 mb-1">Oak Ridge National Lab</h5>
+                        <p class="text-md text-gray-700 mb-2"><span class="font-bold">Researcher</span> | 2023 &ndash; 2024</p>
+                        <ul class="list-disc pl-5 space-y-1 text-xs text-gray-600">
+                            <li>Led projects involving large-scale scientific and Earth observation systems data processing and delivery.</li>
+                            <li>Deployed scientific data processing and delivery codebase on an in-house Kubernetes platform.</li>
+                            <li>Orchestrated the containerization and Kubernetes deployment of atmospheric data ingestion, processing, and transfer systems for efficient scaling.</li>
+                            <li>Headed the classification of atmospheric datasets based on metadata to effectively categorize new products and recommend them for scientific research.</li>
+                        </ul>
+                    </div>
+
+                    <!-- NASA Jet Propulsion Laboratory (JPL)/Caltech -->
+                    <div class="bg-white p-5 rounded-md shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                        <h5 class="text-xl font-semibold text-gray-900 mb-1">NASA Jet Propulsion Laboratory (JPL)/Caltech</h5>
+                        <p class="text-md text-gray-700 mb-2"><span class="font-bold">JPL Postdoc Fellow</span> | 2019 &ndash; 2023</p>
+                        <ul class="list-disc pl-5 space-y-1 text-xs text-gray-600">
+                            <li>Contributed to the GRACE Follow-On mission, analyzing Earth's gravity field data to study climate change effects, including presentations at the American Geophysical Union (AGU) conference.</li>
+                            <li>Aided in the development of GRACE-FO Level 1 data products, crucial for understanding global mass distribution changes.</li>
+                            <li>Engineered end-to-end data pipelines for ingesting, processing, and transferring earthquake datasets from in-field sensors to a cloud platform.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Leibniz Universitaet, Germany (Ph.D. / Research Scientist) -->
+                    <div class="bg-white p-5 rounded-md shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                        <h5 class="text-xl font-semibold text-gray-900 mb-1">Leibniz Universitaet, Hannover, Germany & Max Planck Institute of Gravitational Physics (AEI)</h5>
+                        <p class="text-md text-gray-700 mb-2"><span class="font-bold">Doctoral Research / Research Scientist</span> | 2014 &ndash; 2018</p>
+                        <ul class="list-disc pl-5 space-y-1 text-xs text-gray-600">
+                            <li>My doctoral research involved <span class="font-bold">developing and applying advanced computational algorithms</span> to analyze large datasets from the GRACE (Gravity Recovery and Climate Experiment) mission, focusing on Earth's gravity field changes and the <span class="font-bold">performance assessment of satellite instrumentation through numerical modeling</span>.</li>
+                            <li><span class="font-bold">Engineered custom computational routines</span> for the real-time noise assessment of high-frequency sensor data from the GRACE satellite mission, which involved <span class="font-bold">managing and processing extensive time-series datasets</span> to enhance data quality.</li>
+                            <li><span class="font-bold">Implemented sophisticated computational and statistical methods</span> for comprehensive uncertainty analysis and quantification, ensuring the scientific rigor and reliability of satellite-derived Earth's gravity field products.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Indian Institute of Technology Roorkee, India -->
+                    <div class="bg-white p-5 rounded-md shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                        <h5 class="text-xl font-semibold text-gray-900 mb-1">Indian Institute of Technology Roorkee, India</h5>
+                        <p class="text-md text-gray-700 mb-2"><span class="font-bold">Masters in Technology</span> | 2012 &ndash; 2014</p>
+                        <ul class="list-disc pl-5 space-y-1 text-xs text-gray-600">
+                            <li>Completed my Master's degree, building a strong foundation in engineering principles and research methodologies.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-Engineering Expertise -->
+            <div class="p-6 bg-gray-50 rounded-lg shadow-md mt-8">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-purple-500">Non-Engineering Expertise</h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    As a <span class="font-bold">certified astrologer</span>, I am passionate about helping individuals navigate their life journeys by interpreting the celestial positions at their birth. Indeed, the stars influence our personalities! Through astrological readings, I offer insights to guide people in their careers, personal relationships, and professional development.
+                </p>
+                <p class="text-lg text-gray-700 mt-4">
+                    Would you like to know more about yourself? Feel free to reach out via email: <a href="mailto:sujata.ved.astrologer@gmail.com" class="text-blue-600 hover:text-blue-800 font-semibold underline transition duration-300 ease-in-out">sujata.ved.astrologer@gmail.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section - Consistent with index.html -->
+    <footer class="bg-gray-800 text-white text-center py-4 px-6 md:px-8 mt-auto">
+        <p class="text-sm">&copy; 2023 Dr. Sujata Goswami. All rights reserved.</p>
+        <p class="text-xs mt-1">Built with passion and curiosity.</p>
+    </footer>
+</body>
+</html>
