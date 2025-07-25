@@ -1,51 +1,85 @@
-<!-- background.html -->
-<!-- background.html -->
-<section id="background">
-    <h2>Professional Background</h2>
-    <p>A timeline of my research experience and contributions to Earth science and gravitational physics.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sujata Goswami - Professional Background</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Consistent light gray background */
+            color: #333; /* Darker text for readability */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+
+<section id="background" class="container mx-auto max-w-4xl bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 pb-3 border-b-2 border-blue-600 text-center">
+        Professional Background
+    </h2>
+    <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+        A detailed timeline of my research experience and significant contributions in Earth science, gravitational physics, and software engineering.
+    </p>
     
-    <hr>
+    <div class="space-y-8">
+        <!-- Lawrence Berkeley National Lab -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-blue-700 mb-2">Lawrence Berkeley National Lab</h3>
+            <p class="text-lg text-gray-800 mb-3"><span class="font-bold">Software Engineer- Lead</span> | Mid-2024 &ndash; Present</p>
+            <p class="text-md text-gray-700 leading-relaxed">
+                Currently managing the software development projects for the Advanced Light Source User Office, focusing on robust and efficient solutions.
+            </p>
+        </div>
 
-    <div>
-        <h3>Lawrence Berkeley National Lab</h3>
-        <p><strong>Software Engineer- Lead | Mid-2024 -- Present</strong></p>
-        <p>Currently managing the Software development projects for the @Advanced Light Source User Office.</p>
+        <!-- Oak Ridge National Lab -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-blue-700 mb-2">Oak Ridge National Lab</h3>
+            <p class="text-lg text-gray-800 mb-3"><span class="font-bold">Researcher</span> | 2023 &ndash; 2024</p>
+            <ul class="list-disc pl-5 space-y-2 text-md text-gray-700">
+                <li>Led projects involving large-scale scientific and Earth observation systems data processing and delivery.</li>
+                <li>Deployed scientific data processing and delivery codebase on an in-house Kubernetes platform.</li>
+                <li>Orchestrated the containerization and Kubernetes deployment of atmospheric data ingestion, processing, and transfer systems for efficient scaling.</li>
+                <li>Headed the classification of atmospheric datasets based on metadata to effectively categorize new products and recommend them for scientific research.</li>
+            </ul>
+        </div>
+
+        <!-- NASA Jet Propulsion Laboratory (JPL)/California Institute of Technology -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-blue-700 mb-2">NASA Jet Propulsion Laboratory (JPL)/California Institute of Technology</h3>
+            <p class="text-lg text-gray-800 mb-3"><span class="font-bold">JPL Postdoctoral Fellow</span> | 2019 &ndash; 2023</p>
+            <ul class="list-disc pl-5 space-y-2 text-md text-gray-700">
+                <li>Contributed to the GRACE Follow-On mission, analyzing Earth's gravity field data to study climate change effects, including presentations at the American Geophysical Union (AGU) conference.</li>
+                <li>Aided in the development of GRACE-FO Level 1 data products, crucial for understanding global mass distribution changes.</li>
+                <li>Engineered end-to-end data pipelines for ingesting, processing, and transferring earthquake datasets from in-field sensors to a cloud platform.</li>
+            </ul>
+        </div>
+
+        <!-- Max Planck Institute of Gravitational Physics (AEI), Germany -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-blue-700 mb-2">Max Planck Institute of Gravitational Physics (AEI), Germany</h3>
+            <p class="text-lg text-gray-800 mb-3"><span class="font-bold">Ph.D. Researcher</span> | 2014 &ndash; 2018</p>
+            <ul class="list-disc pl-5 space-y-2 text-md text-gray-700">
+                <li>Doctoral research focused on analyzing GRACE (Gravity Recovery and Climate Experiment) gravity data and assessing satellite instrumentation performance.</li>
+                <li>Conducted noise assessment of real-time sensor data from the GRACE satellite mission (time-series datasets).</li>
+                <li>Performed uncertainty analysis and quantification for satellite-derived Earth's gravity field products.</li>
+            </ul>
+        </div>
+
+        <!-- Indian Institute of Technology Roorkee, India -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold text-blue-700 mb-2">Indian Institute of Technology Roorkee, India</h3>
+            <p class="text-lg text-gray-800 mb-3"><span class="font-bold">Masters in Technology</span> | 2012 &ndash; 2014</p>
+            <p class="text-md text-gray-700 leading-relaxed">
+                Completed my Master's degree, building a strong foundation in engineering principles and research methodologies.
+            </p>
+        </div>
     </div>
-
-    <div>
-        <h3>Oak Ridge National Lab</h3>
-        <p><strong>Researcher | 2023 -- 2024</strong></p>
-        <ul>
-        <li>Led the projects involving large-scale scientific & Earth observation systems data processing and delivery.</li>
-        <li>Deployment of Scientific data processing and delivery codebase on in-house Kubernetes platform</li>
-        <li>Containerization of the atmospheric data ingestion, processing, transfer to the user data repos, Storage systems code and deployment of containers on kubernetes for efficient scaling.   </li> 
-        <li>Led the classfication of atmospheric data sets based on their meta data to effectively classify the new atmopsheric data products and also recommend them to the users for science research.</li>
-        </ul>
-    </div>
-
-    <div>
-        <h3>NASA Jet Propulsion Laboratory (JPL)/California Institute of Technology</h3>
-        <p><strong>JPL Postdoctoral Fellow | 2019 -- 2023</strong></p>
-        <ul>
-        <li>Worked on the GRACE Follow-On mission, studying the effects of climate change using data about Earth's gravity field. My work included peer-reviewed poster presentations at the American Geophysical Union (AGU) conference.</li>
-        <li>Contributed to the development of the GRACE-FO Level 1 data products, which are essential for understanding changes in Earth's mass distribution.</li>
-        <li>Engineered end-to-end data pipelines to ingest, process, and transfer earthquake datasets from in-field sensors to a cloud platform.</li>
-        </ul>
-    </div>
-
-    <div>
-        <h3>Max Planck Institute of Gravitational Physics (AEI), Germany</h3>
-        <p><strong>Ph.D. Researcher | 2014 -- 2018</strong></p>
-        <ul>
-        <li> My doctoral research focused on analyzing GRACE (Gravity Recovery and Climate Experiment) gravity data and assessing satellite instrumentation performance.</li>
-        <li> Noise asseessement of the real time sensors' data (Time-series datasets) of the GRACE satellite mission. </li>  
-        <li> Uncertainty analysis and qunatification in satellite derived Earth's gravity field products </li> 
-        </ul>ul>
-    </div>
-
-    <div>
-        <h3>Indian Institute of Technology Roorkee, India</h3>
-        <p><strong>Masters in Technology | 2012 -- 2014</strong></p>
-    </div>
-
 </section>
+
+</body>
+</html>
